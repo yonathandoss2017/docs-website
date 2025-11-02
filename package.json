@@ -64,7 +64,7 @@
     "remark-rehype": "^8.0.0",
     "rss": "^1.2.2",
     "sequelize": "^6.6.5",
-    "turndown": "^6.0.0",
+    "turndown": "^7.2.2",
     "unist-util-filter": "^2.0.3",
     "unist-util-remove": "^2.0.1"
   },
